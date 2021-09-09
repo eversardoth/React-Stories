@@ -11,7 +11,10 @@ class Layout extends React.Component{
         this.state = {contador: 1, posicion: '', historial: []  }
         this.handleClick = this.handleClick.bind(this)
         this.options = props.options
+    }
 
+    componentWillUnmount(){
+        alert('Su tiempo de juego ha terminado')
     }
 
     handleClick(event){
