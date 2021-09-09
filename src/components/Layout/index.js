@@ -16,7 +16,7 @@ class Layout extends React.Component{
     componentWillUnmount(){
         alert('Su tiempo de juego ha terminado')
     }
-
+    
     handleClick(event){
         let n = this.state.contador.toString().length
         if(this.state.contador.toString()===(data.slice(-1)[0]).id.slice(0,n)){
